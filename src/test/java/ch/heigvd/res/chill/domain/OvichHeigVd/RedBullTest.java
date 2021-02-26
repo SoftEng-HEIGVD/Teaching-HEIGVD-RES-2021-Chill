@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.OvichHeigVd;
 
 import static org.junit.jupiter.api.Assertions.*;
 

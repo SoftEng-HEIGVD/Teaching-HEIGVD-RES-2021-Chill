@@ -2,6 +2,7 @@ package ch.heigvd.res.chill.domain.pozniako16;
 
 import ch.heigvd.res.chill.domain.IProduct;
 
+//test
 import java.math.BigDecimal;
 
 public class Guinness implements IProduct {

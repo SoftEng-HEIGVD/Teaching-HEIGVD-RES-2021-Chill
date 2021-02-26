@@ -4,7 +4,7 @@ import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
 
-public class Boxer implements IProduct {
+public class Gabs implements IProduct {
 
   public final static String NAME = "Gabs";
   public final static BigDecimal PRICE = new BigDecimal(3.0);

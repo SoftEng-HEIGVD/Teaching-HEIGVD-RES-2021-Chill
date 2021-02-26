@@ -4,10 +4,10 @@ import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
 
-public class RedBull implements IProduct {
+public class Monster implements IProduct {
 
-    public final static String NAME = "RedBull";
-    public final static BigDecimal PRICE = new BigDecimal(2.0);
+    public final static String NAME = "Monster";
+    public final static BigDecimal PRICE = new BigDecimal(3.0);
 
     @Override
     public String getName() {

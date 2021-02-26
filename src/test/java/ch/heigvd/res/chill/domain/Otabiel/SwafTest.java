@@ -12,16 +12,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SwafTest {
 
     @Test
-    void thePriceAndNameForBoxerShouldBeCorrect() {
+    void thePriceAndNameForSwafShouldBeCorrect() {
         Swaf beer = new Swaf();
         assertEquals(beer.getName(), Swaf.NAME);
         assertEquals(beer.getPrice(), Swaf.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForBoxer() {
+    void aBartenderShouldAcceptAnOrderForSwaf() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Boxer";
+        String productName = "ch.heigvd.res.chill.domain.Otabiel.Swaf";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = Swaf.PRICE.multiply(new BigDecimal(3));

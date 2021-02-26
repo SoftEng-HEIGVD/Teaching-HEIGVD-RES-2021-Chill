@@ -1,7 +1,6 @@
 package ch.heigvd.res.chill.domain.junodch;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.wasadigi.PunkIPA;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -10,22 +9,22 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class WaterTest {
+class CoffeeTest {
 
   @Test
-  void thePriceAndNameForWaterShouldBeCorrect() {
-    Water water = new Water();
-    assertEquals(water.getName(), Water.NAME);
-    assertEquals(water.getPrice(), Water.PRICE);
+  void thePriceAndNameForCoffeeShouldBeCorrect() {
+    Coffee coffee = new Coffee();
+    assertEquals(coffee.getName(), Coffee.NAME);
+    assertEquals(coffee.getPrice(), Coffee.PRICE);
   }
 
   @Test
-  void aBartenderShouldAcceptAnOrderForWater() {
+  void aBartenderShouldAcceptAnOrderForCoffee() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.junodch.Water";
+    String productName = "ch.heigvd.res.chill.domain.junodch.Coffee";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
-    BigDecimal expectedTotalPrice = Water.PRICE.multiply(new BigDecimal(3));
+    BigDecimal expectedTotalPrice = Coffee.PRICE.multiply(new BigDecimal(3));
     assertEquals(expectedTotalPrice, response.getTotalPrice());
   }
 

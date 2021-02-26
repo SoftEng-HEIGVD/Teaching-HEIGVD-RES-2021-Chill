@@ -3,7 +3,6 @@ package ch.heigvd.res.chill.domain.OvichHeigVd;
 import static org.junit.jupiter.api.Assertions.*;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.OvichHeigVd.*;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -23,7 +22,7 @@ class RedBullTest {
     @Test
     void aBartenderShouldAcceptAnOrderForRedbull() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.OvichHeigVd.RedBull";
+        String productName = "ch.heigvd.res.chill.domain.wasadigi.RedBull";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = RedBull.PRICE.multiply(new BigDecimal(3));

@@ -14,9 +14,9 @@ class WaterTest {
 
   @Test
   void thePriceAndNameForWaterShouldBeCorrect() {
-    Water beer = new Water();
-    assertEquals(beer.getName(), Water.NAME);
-    assertEquals(beer.getPrice(), Water.PRICE);
+    Water water = new Water();
+    assertEquals(water.getName(), Water.NAME);
+    assertEquals(water.getPrice(), Water.PRICE);
   }
 
   @Test

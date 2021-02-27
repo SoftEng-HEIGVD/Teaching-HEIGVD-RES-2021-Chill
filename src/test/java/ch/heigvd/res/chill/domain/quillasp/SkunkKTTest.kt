@@ -1,15 +1,12 @@
 package ch.heigvd.res.chill.domain.quillasp
 
 import ch.heigvd.res.chill.domain.Bartender
-import ch.heigvd.res.chill.domain.quillasp.SkunkKT
 import ch.heigvd.res.chill.protocol.OrderRequest
-import ch.heigvd.res.chill.protocol.OrderResponse
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.assertEquals
 
 import java.math.BigDecimal
-import java.nio.file.WatchKey
 
 class SkunkKTTest {
 

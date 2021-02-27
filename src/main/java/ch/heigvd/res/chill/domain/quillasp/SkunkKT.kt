@@ -6,6 +6,9 @@ import java.math.BigDecimal
 /*
  * Je me suis dit: "pourquoi pas en Kotlin", c'est un peu comme un Java en plus
  * lisible, imho
+ *
+ * Bon, c'était un peu tard la nuit, du coup le premier checkout n'a pas
+ * vraiment checkouté… Mais bon, c'est je trouvais ça amusant
  */
 class SkunkKT: IProduct {
     override fun getName(): String { return NAME; }

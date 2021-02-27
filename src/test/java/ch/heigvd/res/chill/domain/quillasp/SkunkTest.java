@@ -1,7 +1,7 @@
 package ch.heigvd.res.chill.domain.quillasp;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.wasadigi.Boxer;
+import ch.heigvd.res.chill.domain.quillasp.Skunk;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -10,6 +10,9 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+ * Ces accès propriétés tellement plus lisibles, re-imho
+ */
 public class SkunkTest {
 
     @Test
@@ -20,7 +23,7 @@ public class SkunkTest {
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForSkunk() {
+    void aBartenderShouldAcceptAnOrderForSkunk() { // Yes, always
         Bartender jane = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.quillasp.Skunk";
         OrderRequest request = new OrderRequest(3, productName);

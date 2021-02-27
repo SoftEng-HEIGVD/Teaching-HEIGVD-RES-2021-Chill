@@ -13,14 +13,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class Poretti6Test {
 
     @Test
-    void thePriceAndNameForBoxerShouldBeCorrect() {
+    void thePriceAndNameForPoretti6ShouldBeCorrect() {
         Poretti6 poretti6 = new Poretti6();
         assertEquals(poretti6.getName(), Poretti6.NAME);
         assertEquals(poretti6.getPrice(), Poretti6.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForBoxer() {
+    void aBartenderShouldAcceptAnOrderForPoretti6() {
         Bartender alex = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.Alessandro_AP.Poretti6";
         OrderRequest request = new OrderRequest(3, productName);

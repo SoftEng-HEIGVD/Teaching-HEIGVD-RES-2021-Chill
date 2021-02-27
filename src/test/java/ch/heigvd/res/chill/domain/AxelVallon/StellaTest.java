@@ -19,7 +19,7 @@ class StellaTest {
   }
 
   @Test
-  void aBartenderShouldAcceptAnOrderForBoxer() {
+  void aBartenderShouldAcceptAnOrderForStella() {
     Bartender jane = new Bartender();
     String productName = "ch.heigvd.res.chill.domain.AxelVallon.Stella";
     OrderRequest request = new OrderRequest(3, productName);

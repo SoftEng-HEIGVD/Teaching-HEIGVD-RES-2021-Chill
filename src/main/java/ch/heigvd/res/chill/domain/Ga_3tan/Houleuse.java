@@ -1,13 +1,13 @@
-package ch.heigvd.res.chill.domain.LeonardBesseau;
+package ch.heigvd.res.chill.domain.Ga_3tan;
 
 import ch.heigvd.res.chill.domain.IProduct;
 
 import java.math.BigDecimal;
 
-public class Guinness implements IProduct {
+public class Houleuse implements IProduct {
 
-  public final static String NAME = "Guinness";
-  public final static BigDecimal PRICE = new BigDecimal(5.0);
+  public final static String NAME = "Houleuse";
+  public final static BigDecimal PRICE = new BigDecimal(3.5);
 
   @Override
   public String getName() {

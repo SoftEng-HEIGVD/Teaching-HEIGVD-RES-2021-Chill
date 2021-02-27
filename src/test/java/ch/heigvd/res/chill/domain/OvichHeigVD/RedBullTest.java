@@ -1,9 +1,9 @@
-package ch.heigvd.res.chill.domain.OvichHeigVd;
+package ch.heigvd.res.chill.domain.OvichHeigVD;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.OvichHeigVd.RedBull;
+import ch.heigvd.res.chill.domain.OvichHeigVD.RedBull;
 
 
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -25,7 +25,7 @@ class RedBullTest {
     @Test
     void aBartenderShouldAcceptAnOrderForRedbull() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.OvichHeigVd.RedBull";
+        String productName = "ch.heigvd.res.chill.domain.OvichHeigVD.RedBull";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = RedBull.PRICE.multiply(new BigDecimal(3));

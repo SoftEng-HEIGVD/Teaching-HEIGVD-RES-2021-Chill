@@ -1,6 +1,7 @@
-package ch.heigvd.res.chill.domain.quillasp;
+package ch.heigvd.res.chill.domain.LordTT;
 
 import ch.heigvd.res.chill.domain.Bartender;
+import ch.heigvd.res.chill.domain.LordTT.Swaf;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -9,22 +10,23 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SkunkTest { 
+class SwafTest {
 
     @Test
-    void thePriceAndNameForSkunkShouldBeCorrect() {
-        Skunk skunk = new Skunk();
-        assertEquals(skunk.getName(), Skunk.NAME);
-        assertEquals(skunk.getPrice(), Skunk.PRICE);
+    void thePriceAndNameForSwafShouldBeCorrect() {
+        Swaf beer = new Swaf();
+        assertEquals(beer.getName(), Swaf.NAME);
+        assertEquals(beer.getPrice(), Swaf.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForSkunk() { // Yes, always
+    void aBartenderShouldAcceptAnOrderForSwaf() {
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.quillasp.Skunk";
+        String productName = "ch.heigvd.res.chill.domain.LordTT.Swaf";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
-        BigDecimal expectedTotalPrice = Skunk.PRICE.multiply(new BigDecimal(3));
+        BigDecimal expectedTotalPrice = Swaf.PRICE.multiply(new BigDecimal(3));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
+
 }

@@ -3,7 +3,7 @@ package ch.heigvd.res.chill.domain.AllemanoEn;
 import static org.junit.jupiter.api.Assertions.*;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.AllemanoEn.PrixGarantie;
+import ch.heigvd.res.chill.domain.AllemanoEn.DocteurGabs;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class DocteurGabsTest {
 
     @Test
-    void thePriceAndNameForBoxerShouldBeCorrect() {
+    void thePriceAndNameForDocteurGabsShouldBeCorrect() {
         DocteurGabs beer = new DocteurGabs();
         assertEquals(beer.getName(), DocteurGabs.NAME);
         assertEquals(beer.getPrice(), DocteurGabs.PRICE);

@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TrappeIsidOr {
+class TrappeIsidOrTest {
 
   @Test
   void thePriceAndNameForTrappeIsidOrShouldBeCorrect() {

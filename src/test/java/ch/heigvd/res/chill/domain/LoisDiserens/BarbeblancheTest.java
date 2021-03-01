@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class NebuleuseTest {
+class BarbeblancheTest {
 
     @Test
     void PrixEtNomCorrectFinDuMonde() {

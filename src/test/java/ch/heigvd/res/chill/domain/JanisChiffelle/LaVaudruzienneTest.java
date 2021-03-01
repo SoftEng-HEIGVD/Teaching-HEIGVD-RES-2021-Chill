@@ -1,7 +1,7 @@
 package ch.heigvd.res.chill.domain.JanisChiffelle;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.wasadigi.PunkIPA;
+import ch.heigvd.res.chill.domain.JanisChiffelle.LaVaudruzienne;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Assertions;
@@ -14,14 +14,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class LaVaudruzienneTest {
 
   @Test
-  void thePriceAndNameForPunkIPAShouldBeCorrect() {
+  void thePriceAndNameForLaVaudruzienneShouldBeCorrect() {
     LaVaudruzienne beer = new LaVaudruzienne();
-    Assertions.assertEquals(beer.getName(), PunkIPA.NAME);
-    Assertions.assertEquals(beer.getPrice(), PunkIPA.PRICE);
+    Assertions.assertEquals(beer.getName(), LaVaudruzienne.NAME);
+    Assertions.assertEquals(beer.getPrice(), LaVaudruzienne.PRICE);
   }
 
   @Test
-  void aBartenderShouldAcceptAnOrderForPunkIPA() {
+  void aBartenderShouldAcceptAnOrderForLaVaudruzienne() {
     Bartender jane = new Bartender();
     String productName = "ch.heigvd.res.chill.domain.JanisChiffelle.LaVaudruzienne";
     OrderRequest request = new OrderRequest(3, productName);

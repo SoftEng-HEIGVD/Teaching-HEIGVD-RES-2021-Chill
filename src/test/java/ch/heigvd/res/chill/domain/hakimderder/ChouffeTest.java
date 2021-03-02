@@ -1,7 +1,7 @@
 package ch.heigvd.res.chill.domain.hakimderder;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.hakimderder._88;
+import ch.heigvd.res.chill.domain.hakimderder.Chouffe;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -10,22 +10,22 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class _88Test {
+class ChouffeTest {
 
   @Test
-  void thePriceAndNameFor88ShouldBeCorrect() {
-    _88 beer = new _88();
-    assertEquals(beer.getName(), _88.NAME);
-    assertEquals(beer.getPrice(), _88.PRICE);
+  void thePriceAndNameForChouffeShouldBeCorrect() {
+    Chouffe beer = new Chouffe();
+    assertEquals(beer.getName(), Chouffe.NAME);
+    assertEquals(beer.getPrice(), Chouffe.PRICE);
   }
 
   @Test
-  void aBartenderShouldAcceptAnOrderFor88() {
+  void aBartenderShouldAcceptAnOrderForChouffe() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.hakimderder._88";
+    String productName = "ch.heigvd.res.chill.domain.hakimderder.Chouffe";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
-    BigDecimal expectedTotalPrice = _88.PRICE.multiply(new BigDecimal(3));
+    BigDecimal expectedTotalPrice = Chouffe.PRICE.multiply(new BigDecimal(3));
     assertEquals(expectedTotalPrice, response.getTotalPrice());
   }
 
